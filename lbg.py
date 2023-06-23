@@ -215,5 +215,5 @@ def delete_one(_id):
 # module import protection
 if __name__ == '__main__':
     # get app to serve
-    print(f'API Listening on http://{HOST}:{PORT}')
+    print(f'Application running on on http://{HOST}:{PORT}/index.html')
     app.run(host=HOST, port=PORT, debug=True)

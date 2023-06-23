@@ -43,6 +43,7 @@ class MyLbgApiTestCase(unittest.TestCase):
         Create (Post) request.  Note.  API will need to be running(!)
         """
         response = requests.post(BASE_URL + '/create', json = {'name': 'Tool', 'description': 'Hammer', 'price': 10.5})
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     #@unittest.skip("Skip this test for now using this decorator...")
     def test_create_post_request_type(self):
