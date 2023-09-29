@@ -18,6 +18,7 @@ pipeline {
                 pip3 install -r requirements.txt
                 chmod +x deploy.sh
                 ./deploy.sh
+                sleep 3
                 python3 lbg.test.py
                 '''
             }
