@@ -10,7 +10,7 @@ from lbg import item_builder
 from flask_api import status
 import requests
 
-PORT = 8080
+PORT = 80
 BASE_URL = f"http://localhost:{PORT}"
 
 class MyLbgApiTestCase(unittest.TestCase):
